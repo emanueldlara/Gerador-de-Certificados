@@ -504,7 +504,7 @@
         <Component class="br.com.cyber.componente.KLabel" name="kLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/br/edu/ifrs/imagens/listasRedimensionado.jpg"/>
+              <Image iconType="3" name="/br/edu/ifrs/imagens/bg_870x690.jpg"/>
             </Property>
           </Properties>
           <Constraints>

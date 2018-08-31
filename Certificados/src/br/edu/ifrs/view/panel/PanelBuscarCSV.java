@@ -31,30 +31,30 @@ public class PanelBuscarCSV extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        Titulo = new javax.swing.JLabel();
-        Nome = new javax.swing.JLabel();
+        txtTitulo = new javax.swing.JLabel();
+        txtLocal = new javax.swing.JLabel();
         pnAlert = new javax.swing.JPanel();
         lbAlert = new javax.swing.JLabel();
         lbIconAlert = new javax.swing.JLabel();
-        btExcluir = new br.com.cyber.componente.KButton();
+        btCancelar = new br.com.cyber.componente.KButton();
+        btBuscar = new br.com.cyber.componente.KButton();
+        etBusca = new br.com.cyber.componente.KTextField();
         btAdicionar = new br.com.cyber.componente.KButton();
-        etNome = new br.com.cyber.componente.KTextField();
-        btAdicionar1 = new br.com.cyber.componente.KButton();
         Fundo = new br.com.cyber.componente.KLabel();
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(null);
 
-        Titulo.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
-        Titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Titulo.setText("Buscar CSV");
-        jPanel1.add(Titulo);
-        Titulo.setBounds(0, 20, 600, 48);
+        txtTitulo.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
+        txtTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtTitulo.setText("Buscar CSV");
+        jPanel1.add(txtTitulo);
+        txtTitulo.setBounds(0, 20, 600, 48);
 
-        Nome.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        Nome.setText("Local");
-        jPanel1.add(Nome);
-        Nome.setBounds(70, 100, 80, 30);
+        txtLocal.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtLocal.setText("Local");
+        jPanel1.add(txtLocal);
+        txtLocal.setBounds(70, 100, 80, 30);
 
         pnAlert.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
 
@@ -90,16 +90,37 @@ public class PanelBuscarCSV extends javax.swing.JPanel {
         jPanel1.add(pnAlert);
         pnAlert.setBounds(70, 180, 250, 50);
 
-        btExcluir.setBackground(new java.awt.Color(38, 193, 93));
-        btExcluir.setForeground(new java.awt.Color(255, 255, 255));
-        btExcluir.setText("Cancelar");
-        btExcluir.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        jPanel1.add(btExcluir);
-        btExcluir.setBounds(430, 220, 120, 34);
+        btCancelar.setBackground(new java.awt.Color(38, 193, 93));
+        btCancelar.setForeground(new java.awt.Color(255, 255, 255));
+        btCancelar.setText("Cancelar");
+        btCancelar.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        jPanel1.add(btCancelar);
+        btCancelar.setBounds(430, 220, 120, 34);
 
-        btAdicionar.setBackground(new java.awt.Color(125, 190, 189));
+        btBuscar.setBackground(new java.awt.Color(125, 190, 189));
+        btBuscar.setForeground(new java.awt.Color(255, 255, 255));
+        btBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/magnifier.png"))); // NOI18N
+        btBuscar.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        btBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btBuscarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btBuscar);
+        btBuscar.setBounds(500, 140, 50, 34);
+
+        etBusca.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
+        etBusca.setK_back_error(new java.awt.Color(255, 153, 153));
+        etBusca.setK_back_focus_gained(new java.awt.Color(255, 255, 255));
+        etBusca.setK_bord_error(new java.awt.Color(255, 102, 102));
+        etBusca.setK_bord_focus_gained(new java.awt.Color(38, 193, 93));
+        etBusca.setK_obrigatory(true);
+        jPanel1.add(etBusca);
+        etBusca.setBounds(70, 140, 430, 35);
+
+        btAdicionar.setBackground(new java.awt.Color(38, 193, 93));
         btAdicionar.setForeground(new java.awt.Color(255, 255, 255));
-        btAdicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/magnifier.png"))); // NOI18N
+        btAdicionar.setText("Adicionar");
         btAdicionar.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         btAdicionar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -107,28 +128,7 @@ public class PanelBuscarCSV extends javax.swing.JPanel {
             }
         });
         jPanel1.add(btAdicionar);
-        btAdicionar.setBounds(500, 140, 50, 34);
-
-        etNome.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        etNome.setK_back_error(new java.awt.Color(255, 153, 153));
-        etNome.setK_back_focus_gained(new java.awt.Color(255, 255, 255));
-        etNome.setK_bord_error(new java.awt.Color(255, 102, 102));
-        etNome.setK_bord_focus_gained(new java.awt.Color(38, 193, 93));
-        etNome.setK_obrigatory(true);
-        jPanel1.add(etNome);
-        etNome.setBounds(70, 140, 430, 35);
-
-        btAdicionar1.setBackground(new java.awt.Color(38, 193, 93));
-        btAdicionar1.setForeground(new java.awt.Color(255, 255, 255));
-        btAdicionar1.setText("Adicionar");
-        btAdicionar1.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        btAdicionar1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btAdicionar1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btAdicionar1);
-        btAdicionar1.setBounds(430, 180, 120, 34);
+        btAdicionar.setBounds(430, 180, 120, 34);
 
         Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/addpessoa.jpg"))); // NOI18N
         jPanel1.add(Fundo);
@@ -148,26 +148,26 @@ public class PanelBuscarCSV extends javax.swing.JPanel {
         jPanel1.getAccessibleContext().setAccessibleDescription("");
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btBuscarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btBuscarActionPerformed
+
     private void btAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAdicionarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btAdicionarActionPerformed
 
-    private void btAdicionar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAdicionar1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btAdicionar1ActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private br.com.cyber.componente.KLabel Fundo;
-    private javax.swing.JLabel Nome;
-    private javax.swing.JLabel Titulo;
     public static br.com.cyber.componente.KButton btAdicionar;
-    public static br.com.cyber.componente.KButton btAdicionar1;
-    public static br.com.cyber.componente.KButton btExcluir;
-    public static br.com.cyber.componente.KTextField etNome;
+    public static br.com.cyber.componente.KButton btBuscar;
+    public static br.com.cyber.componente.KButton btCancelar;
+    public static br.com.cyber.componente.KTextField etBusca;
     private javax.swing.JPanel jPanel1;
     public static javax.swing.JLabel lbAlert;
     public static javax.swing.JLabel lbIconAlert;
     public static javax.swing.JPanel pnAlert;
+    private javax.swing.JLabel txtLocal;
+    private javax.swing.JLabel txtTitulo;
     // End of variables declaration//GEN-END:variables
 }

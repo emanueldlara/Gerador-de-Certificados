@@ -37,7 +37,6 @@ public class PanelTelaInicial extends javax.swing.JPanel {
         jScrollPane2 = new javax.swing.JScrollPane();
         ktable1 = new br.com.cyber.componente.Ktable();
         jLabel2 = new javax.swing.JLabel();
-        btAdicionarPessoa = new br.com.cyber.componente.KButton();
         kLabel1 = new br.com.cyber.componente.KLabel();
 
         ktable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -54,7 +53,7 @@ public class PanelTelaInicial extends javax.swing.JPanel {
         jScrollPane2.setViewportView(ktable1);
 
         setBackground(new java.awt.Color(254, 254, 254));
-        setBorder(new javax.swing.border.SoftBevelBorder(0));
+        setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         setPreferredSize(new java.awt.Dimension(740, 520));
         setLayout(null);
 
@@ -63,16 +62,6 @@ public class PanelTelaInicial extends javax.swing.JPanel {
         add(jLabel2);
         jLabel2.setBounds(120, 70, 510, 48);
 
-        btAdicionarPessoa.setBackground(new java.awt.Color(38, 193, 93));
-        btAdicionarPessoa.setForeground(new java.awt.Color(255, 255, 255));
-        btAdicionarPessoa.setText("Adicionar Pessoas");
-        btAdicionarPessoa.setAutoscrolls(true);
-        btAdicionarPessoa.setBk_focus_gained(new java.awt.Color(38, 193, 93));
-        btAdicionarPessoa.setBk_focus_lost(new java.awt.Color(38, 193, 93));
-        btAdicionarPessoa.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        add(btAdicionarPessoa);
-        btAdicionarPessoa.setBounds(290, 240, 200, 34);
-
         kLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/listas.jpg"))); // NOI18N
         add(kLabel1);
         kLabel1.setBounds(0, 0, 750, 540);
@@ -80,7 +69,6 @@ public class PanelTelaInicial extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public static br.com.cyber.componente.KButton btAdicionarPessoa;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane2;
     private br.com.cyber.componente.KLabel kLabel1;

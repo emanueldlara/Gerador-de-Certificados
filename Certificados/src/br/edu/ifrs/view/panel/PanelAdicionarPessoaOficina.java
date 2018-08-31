@@ -232,7 +232,7 @@ public class PanelAdicionarPessoaOficina extends javax.swing.JPanel {
         jPanel1.add(jScrollPane5);
         jScrollPane5.setBounds(40, 480, 310, 90);
 
-        kLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/listasRedimensionado.jpg"))); // NOI18N
+        kLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/bg_870x690.jpg"))); // NOI18N
         jPanel1.add(kLabel1);
         kLabel1.setBounds(-4, -6, 860, 690);
 

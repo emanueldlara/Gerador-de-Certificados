@@ -31,14 +31,14 @@ public class PanelAdicionarPessoa extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        Titulo = new javax.swing.JLabel();
-        Nome = new javax.swing.JLabel();
-        Email = new javax.swing.JLabel();
-        CPF = new javax.swing.JLabel();
+        txtTitulo = new javax.swing.JLabel();
+        txtNome = new javax.swing.JLabel();
+        txtEmail = new javax.swing.JLabel();
+        txtCPF = new javax.swing.JLabel();
         pnAlert = new javax.swing.JPanel();
         lbAlert = new javax.swing.JLabel();
         lbIconAlert = new javax.swing.JLabel();
-        btEditar = new br.com.cyber.componente.KButton();
+        btCSV = new br.com.cyber.componente.KButton();
         etEmail = new br.com.cyber.componente.KTextField();
         btExcluir = new br.com.cyber.componente.KButton();
         btAdicionar = new br.com.cyber.componente.KButton();
@@ -49,26 +49,26 @@ public class PanelAdicionarPessoa extends javax.swing.JPanel {
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(null);
 
-        Titulo.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
-        Titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Titulo.setText("Adicionar Pessoa");
-        jPanel1.add(Titulo);
-        Titulo.setBounds(0, 20, 600, 48);
+        txtTitulo.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
+        txtTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtTitulo.setText("Adicionar Pessoa");
+        jPanel1.add(txtTitulo);
+        txtTitulo.setBounds(0, 20, 600, 48);
 
-        Nome.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        Nome.setText("Nome*");
-        jPanel1.add(Nome);
-        Nome.setBounds(70, 93, 80, 30);
+        txtNome.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtNome.setText("Nome*");
+        jPanel1.add(txtNome);
+        txtNome.setBounds(70, 93, 80, 30);
 
-        Email.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        Email.setText("E-mail*");
-        jPanel1.add(Email);
-        Email.setBounds(70, 172, 110, 33);
+        txtEmail.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtEmail.setText("E-mail*");
+        jPanel1.add(txtEmail);
+        txtEmail.setBounds(70, 172, 110, 33);
 
-        CPF.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        CPF.setText("CPF*");
-        jPanel1.add(CPF);
-        CPF.setBounds(70, 251, 60, 33);
+        txtCPF.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtCPF.setText("CPF*");
+        jPanel1.add(txtCPF);
+        txtCPF.setBounds(70, 251, 60, 33);
 
         pnAlert.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
 
@@ -104,12 +104,12 @@ public class PanelAdicionarPessoa extends javax.swing.JPanel {
         jPanel1.add(pnAlert);
         pnAlert.setBounds(200, 320, 250, 50);
 
-        btEditar.setBackground(new java.awt.Color(38, 193, 93));
-        btEditar.setForeground(new java.awt.Color(255, 255, 255));
-        btEditar.setText("Adicionar por CSV");
-        btEditar.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        jPanel1.add(btEditar);
-        btEditar.setBounds(70, 390, 200, 34);
+        btCSV.setBackground(new java.awt.Color(38, 193, 93));
+        btCSV.setForeground(new java.awt.Color(255, 255, 255));
+        btCSV.setText("Adicionar por CSV");
+        btCSV.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        jPanel1.add(btCSV);
+        btCSV.setBounds(70, 390, 200, 34);
 
         etEmail.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         etEmail.setK_back_error(new java.awt.Color(255, 153, 153));
@@ -181,13 +181,9 @@ public class PanelAdicionarPessoa extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel CPF;
-    private javax.swing.JLabel Email;
     private br.com.cyber.componente.KLabel Fundo;
-    private javax.swing.JLabel Nome;
-    private javax.swing.JLabel Titulo;
     public static br.com.cyber.componente.KButton btAdicionar;
-    public static br.com.cyber.componente.KButton btEditar;
+    public static br.com.cyber.componente.KButton btCSV;
     public static br.com.cyber.componente.KButton btExcluir;
     public static br.com.cyber.componente.KTextField etCPF;
     public static br.com.cyber.componente.KTextField etEmail;
@@ -196,5 +192,9 @@ public class PanelAdicionarPessoa extends javax.swing.JPanel {
     public static javax.swing.JLabel lbAlert;
     public static javax.swing.JLabel lbIconAlert;
     public static javax.swing.JPanel pnAlert;
+    private javax.swing.JLabel txtCPF;
+    private javax.swing.JLabel txtEmail;
+    private javax.swing.JLabel txtNome;
+    private javax.swing.JLabel txtTitulo;
     // End of variables declaration//GEN-END:variables
 }

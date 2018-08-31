@@ -36,15 +36,15 @@ public class PanelListagemOficina extends javax.swing.JPanel {
 
         jScrollPane2 = new javax.swing.JScrollPane();
         ktable1 = new br.com.cyber.componente.Ktable();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        txtBuscar = new javax.swing.JLabel();
+        txtTitulo = new javax.swing.JLabel();
         etBuscar = new br.com.cyber.componente.KTextField();
         btBuscar = new br.com.cyber.componente.KButton();
         btClear = new br.com.cyber.componente.KButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jtOficina = new br.com.cyber.componente.Ktable();
         btAdicionarOficina = new br.com.cyber.componente.KButton();
-        kLabel1 = new br.com.cyber.componente.KLabel();
+        Fundo = new br.com.cyber.componente.KLabel();
 
         ktable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -64,15 +64,15 @@ public class PanelListagemOficina extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(740, 520));
         setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel1.setText("Busca");
-        add(jLabel1);
-        jLabel1.setBounds(80, 170, 120, 20);
+        txtBuscar.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtBuscar.setText("Busca");
+        add(txtBuscar);
+        txtBuscar.setBounds(80, 170, 120, 20);
 
-        jLabel2.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
-        jLabel2.setText("Controle de Oficinas");
-        add(jLabel2);
-        jLabel2.setBounds(79, 42, 450, 48);
+        txtTitulo.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
+        txtTitulo.setText("Controle de Oficinas");
+        add(txtTitulo);
+        txtTitulo.setBounds(79, 42, 450, 48);
 
         etBuscar.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         etBuscar.setK_back_focus_gained(new java.awt.Color(204, 0, 51));
@@ -131,23 +131,23 @@ public class PanelListagemOficina extends javax.swing.JPanel {
         add(btAdicionarOficina);
         btAdicionarOficina.setBounds(79, 124, 186, 34);
 
-        kLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/listas.jpg"))); // NOI18N
-        add(kLabel1);
-        kLabel1.setBounds(0, 0, 750, 540);
+        Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/bg_760x570.jpg"))); // NOI18N
+        add(Fundo);
+        Fundo.setBounds(0, 0, 750, 540);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private br.com.cyber.componente.KLabel Fundo;
     public static br.com.cyber.componente.KButton btAdicionarOficina;
     public static br.com.cyber.componente.KButton btBuscar;
     public static br.com.cyber.componente.KButton btClear;
     public static br.com.cyber.componente.KTextField etBuscar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     public static br.com.cyber.componente.Ktable jtOficina;
-    private br.com.cyber.componente.KLabel kLabel1;
     private br.com.cyber.componente.Ktable ktable1;
+    private javax.swing.JLabel txtBuscar;
+    private javax.swing.JLabel txtTitulo;
     // End of variables declaration//GEN-END:variables
 }

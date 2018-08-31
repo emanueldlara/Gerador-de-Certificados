@@ -34,23 +34,23 @@ public class PanelImprimirCertificados extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        Titulo = new javax.swing.JLabel();
+        txtTitulo = new javax.swing.JLabel();
         pnAlert = new javax.swing.JPanel();
         lbAlert = new javax.swing.JLabel();
         lbIconAlert = new javax.swing.JLabel();
-        btExcluir = new br.com.cyber.componente.KButton();
-        btAdicionar1 = new br.com.cyber.componente.KButton();
-        kComboBox2 = new br.com.cyber.componente.KComboBox();
+        btCancelar = new br.com.cyber.componente.KButton();
+        btConfirmar = new br.com.cyber.componente.KButton();
+        EscolherEventos = new br.com.cyber.componente.KComboBox();
         Fundo = new br.com.cyber.componente.KLabel();
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(null);
 
-        Titulo.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
-        Titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Titulo.setText("Escolher Evento");
-        jPanel1.add(Titulo);
-        Titulo.setBounds(0, 20, 600, 48);
+        txtTitulo.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
+        txtTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtTitulo.setText("Escolher Evento");
+        jPanel1.add(txtTitulo);
+        txtTitulo.setBounds(0, 20, 600, 48);
 
         pnAlert.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
 
@@ -85,28 +85,29 @@ public class PanelImprimirCertificados extends javax.swing.JPanel {
         jPanel1.add(pnAlert);
         pnAlert.setBounds(90, 150, 440, 40);
 
-        btExcluir.setBackground(new java.awt.Color(38, 193, 93));
-        btExcluir.setForeground(new java.awt.Color(255, 255, 255));
-        btExcluir.setText("Cancelar");
-        btExcluir.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        jPanel1.add(btExcluir);
-        btExcluir.setBounds(320, 210, 120, 34);
+        btCancelar.setBackground(new java.awt.Color(38, 193, 93));
+        btCancelar.setForeground(new java.awt.Color(255, 255, 255));
+        btCancelar.setText("Cancelar");
+        btCancelar.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        jPanel1.add(btCancelar);
+        btCancelar.setBounds(320, 210, 120, 34);
 
-        btAdicionar1.setBackground(new java.awt.Color(38, 193, 93));
-        btAdicionar1.setForeground(new java.awt.Color(255, 255, 255));
-        btAdicionar1.setText("Confirmar");
-        btAdicionar1.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        btAdicionar1.addActionListener(new java.awt.event.ActionListener() {
+        btConfirmar.setBackground(new java.awt.Color(38, 193, 93));
+        btConfirmar.setForeground(new java.awt.Color(255, 255, 255));
+        btConfirmar.setText("Confirmar");
+        btConfirmar.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        btConfirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btAdicionar1ActionPerformed(evt);
+                btConfirmarActionPerformed(evt);
             }
         });
-        jPanel1.add(btAdicionar1);
-        btAdicionar1.setBounds(140, 210, 120, 34);
+        jPanel1.add(btConfirmar);
+        btConfirmar.setBounds(140, 210, 120, 34);
 
-        kComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione...", " " }));
-        jPanel1.add(kComboBox2);
-        kComboBox2.setBounds(70, 100, 480, 40);
+        EscolherEventos.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione...", " " }));
+        EscolherEventos.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
+        jPanel1.add(EscolherEventos);
+        EscolherEventos.setBounds(70, 100, 480, 40);
 
         Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/addpessoa.jpg"))); // NOI18N
         jPanel1.add(Fundo);
@@ -126,7 +127,7 @@ public class PanelImprimirCertificados extends javax.swing.JPanel {
         jPanel1.getAccessibleContext().setAccessibleDescription("");
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btAdicionar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAdicionar1ActionPerformed
+    private void btConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btConfirmarActionPerformed
       // Connection conn = Conexao.getConnection();
         
       //  String src = "C:\\Users\\Administrador\\Documents\\NetBeansProjects\\Gerador-de-Certificados\\src\\br\\edu\\ifrs\\util";
@@ -144,18 +145,18 @@ public class PanelImprimirCertificados extends javax.swing.JPanel {
        // JasperViewer view = new JasperViewer(jaspertPrint,false);
         
        // view.setVisible(true);
-    }//GEN-LAST:event_btAdicionar1ActionPerformed
+    }//GEN-LAST:event_btConfirmarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private br.com.cyber.componente.KComboBox EscolherEventos;
     private br.com.cyber.componente.KLabel Fundo;
-    private javax.swing.JLabel Titulo;
-    public static br.com.cyber.componente.KButton btAdicionar1;
-    public static br.com.cyber.componente.KButton btExcluir;
+    public static br.com.cyber.componente.KButton btCancelar;
+    public static br.com.cyber.componente.KButton btConfirmar;
     private javax.swing.JPanel jPanel1;
-    private br.com.cyber.componente.KComboBox kComboBox2;
     public static javax.swing.JLabel lbAlert;
     public static javax.swing.JLabel lbIconAlert;
     public static javax.swing.JPanel pnAlert;
+    private javax.swing.JLabel txtTitulo;
     // End of variables declaration//GEN-END:variables
 }

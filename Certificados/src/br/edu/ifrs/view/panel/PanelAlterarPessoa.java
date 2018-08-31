@@ -33,37 +33,37 @@ public class PanelAlterarPessoa extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        txtTitulo = new javax.swing.JLabel();
+        txtNome = new javax.swing.JLabel();
+        txtEmail = new javax.swing.JLabel();
         pnAlert = new javax.swing.JPanel();
         lbAlert = new javax.swing.JLabel();
         lbIconAlert = new javax.swing.JLabel();
         etNome = new br.com.cyber.componente.KTextField();
         etEmail = new br.com.cyber.componente.KTextField();
         btAlterar = new br.com.cyber.componente.KButton();
-        kLabel1 = new br.com.cyber.componente.KLabel();
+        Fundo = new br.com.cyber.componente.KLabel();
 
         setPreferredSize(new java.awt.Dimension(600, 450));
 
         jPanel1.setBackground(new java.awt.Color(254, 254, 254));
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Alterar Pessoa");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 20, 550, 48);
+        txtTitulo.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
+        txtTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtTitulo.setText("Alterar Pessoa");
+        jPanel1.add(txtTitulo);
+        txtTitulo.setBounds(0, 20, 550, 48);
 
-        jLabel2.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel2.setText("Nome");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(70, 93, 60, 33);
+        txtNome.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtNome.setText("Nome");
+        jPanel1.add(txtNome);
+        txtNome.setBounds(70, 93, 60, 33);
 
-        jLabel3.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel3.setText("E-mail");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(70, 173, 90, 33);
+        txtEmail.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtEmail.setText("E-mail");
+        jPanel1.add(txtEmail);
+        txtEmail.setBounds(70, 173, 90, 33);
 
         lbAlert.setFont(new java.awt.Font("Century Gothic", 2, 18)); // NOI18N
         lbAlert.setForeground(new java.awt.Color(254, 91, 91));
@@ -92,11 +92,22 @@ public class PanelAlterarPessoa extends javax.swing.JPanel {
         );
 
         jPanel1.add(pnAlert);
-        pnAlert.setBounds(185, 332, 284, 44);
+        pnAlert.setBounds(185, 332, 284, 46);
 
+        etNome.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
+        etNome.setK_back_error(new java.awt.Color(253, 153, 153));
+        etNome.setK_back_focus_gained(new java.awt.Color(255, 255, 255));
+        etNome.setK_bord_error(new java.awt.Color(238, 102, 102));
         etNome.setK_obrigatory(true);
         jPanel1.add(etNome);
         etNome.setBounds(70, 120, 399, 35);
+
+        etEmail.setBackground(new java.awt.Color(255, 153, 153));
+        etEmail.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
+        etEmail.setK_back_error(new java.awt.Color(255, 153, 153));
+        etEmail.setK_back_focus_gained(new java.awt.Color(255, 255, 255));
+        etEmail.setK_bord_error(new java.awt.Color(255, 102, 102));
+        etEmail.setK_obrigatory(true);
         jPanel1.add(etEmail);
         etEmail.setBounds(70, 200, 399, 35);
 
@@ -107,9 +118,9 @@ public class PanelAlterarPessoa extends javax.swing.JPanel {
         jPanel1.add(btAlterar);
         btAlterar.setBounds(70, 332, 103, 46);
 
-        kLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/addpessoa.jpg"))); // NOI18N
-        jPanel1.add(kLabel1);
-        kLabel1.setBounds(0, 0, 610, 440);
+        Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/addpessoa.jpg"))); // NOI18N
+        jPanel1.add(Fundo);
+        Fundo.setBounds(0, 0, 610, 440);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -124,16 +135,16 @@ public class PanelAlterarPessoa extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private br.com.cyber.componente.KLabel Fundo;
     public static br.com.cyber.componente.KButton btAlterar;
     public static br.com.cyber.componente.KTextField etEmail;
     public static br.com.cyber.componente.KTextField etNome;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private br.com.cyber.componente.KLabel kLabel1;
     public static javax.swing.JLabel lbAlert;
     public static javax.swing.JLabel lbIconAlert;
     public static javax.swing.JPanel pnAlert;
+    private javax.swing.JLabel txtEmail;
+    private javax.swing.JLabel txtNome;
+    private javax.swing.JLabel txtTitulo;
     // End of variables declaration//GEN-END:variables
 }

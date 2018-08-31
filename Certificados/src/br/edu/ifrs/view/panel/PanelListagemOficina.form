@@ -54,7 +54,7 @@
     <Property name="useNullLayout" type="boolean" value="true"/>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="txtBuscar">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Monospaced" size="24" style="1"/>
@@ -67,7 +67,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="txtTitulo">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Monospaced" size="36" style="1"/>
@@ -219,10 +219,10 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="br.com.cyber.componente.KLabel" name="kLabel1">
+    <Component class="br.com.cyber.componente.KLabel" name="Fundo">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/br/edu/ifrs/imagens/listas.jpg"/>
+          <Image iconType="3" name="/br/edu/ifrs/imagens/bg_760x570.jpg"/>
         </Property>
       </Properties>
       <Constraints>

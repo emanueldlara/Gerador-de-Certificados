@@ -31,10 +31,10 @@ public class PanelAdicionarOficina extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        txtTitulo = new javax.swing.JLabel();
+        txtDataTermino = new javax.swing.JLabel();
+        txtLocal = new javax.swing.JLabel();
+        txtProgramacao = new javax.swing.JLabel();
         pnAlert = new javax.swing.JPanel();
         lbAlert = new javax.swing.JLabel();
         lbIconAlert = new javax.swing.JLabel();
@@ -45,11 +45,11 @@ public class PanelAdicionarOficina extends javax.swing.JPanel {
         etDataInicio = new br.com.cyber.componente.KTextField();
         etDataFim = new br.com.cyber.componente.KTextField();
         etCargaHoraria = new br.com.cyber.componente.KTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        txtDescricao = new javax.swing.JLabel();
+        txtMensagemAssinatura1 = new javax.swing.JLabel();
+        txtMensagemAssinatura2 = new javax.swing.JLabel();
+        txtCargaHoraria = new javax.swing.JLabel();
+        txtDataInicio = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         etDescricao = new br.com.cyber.componente.KTextArea();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -58,32 +58,32 @@ public class PanelAdicionarOficina extends javax.swing.JPanel {
         etTextoAssinatura1 = new br.com.cyber.componente.KTextArea();
         jScrollPane5 = new javax.swing.JScrollPane();
         etTextoAssinatura2 = new br.com.cyber.componente.KTextArea();
-        kLabel1 = new br.com.cyber.componente.KLabel();
+        Fundo = new br.com.cyber.componente.KLabel();
 
         setPreferredSize(new java.awt.Dimension(858, 678));
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
-        jLabel1.setText("Adicionar Oficina");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(50, 70, 380, 48);
+        txtTitulo.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
+        txtTitulo.setText("Adicionar Oficina");
+        jPanel1.add(txtTitulo);
+        txtTitulo.setBounds(50, 70, 380, 48);
 
-        jLabel2.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel2.setText("Data de Término");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(460, 180, 220, 33);
+        txtDataTermino.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtDataTermino.setText("Data de Término");
+        jPanel1.add(txtDataTermino);
+        txtDataTermino.setBounds(460, 180, 220, 33);
 
-        jLabel3.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel3.setText("Local");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(70, 250, 80, 33);
+        txtLocal.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtLocal.setText("Local");
+        jPanel1.add(txtLocal);
+        txtLocal.setBounds(70, 250, 80, 33);
 
-        jLabel4.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel4.setText("Programação");
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(500, 310, 160, 33);
+        txtProgramacao.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtProgramacao.setText("Programação");
+        jPanel1.add(txtProgramacao);
+        txtProgramacao.setBounds(500, 310, 160, 33);
 
         lbAlert.setFont(new java.awt.Font("Monospaced", 2, 18)); // NOI18N
         lbAlert.setForeground(new java.awt.Color(254, 91, 91));
@@ -171,30 +171,30 @@ public class PanelAdicionarOficina extends javax.swing.JPanel {
         jPanel1.add(etCargaHoraria);
         etCargaHoraria.setBounds(260, 160, 70, 35);
 
-        jLabel5.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel5.setText("Descrição");
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(70, 300, 130, 33);
+        txtDescricao.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtDescricao.setText("Descrição");
+        jPanel1.add(txtDescricao);
+        txtDescricao.setBounds(70, 300, 130, 33);
 
-        jLabel6.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel6.setText("Mensagem de Assinatura 1");
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(50, 440, 380, 33);
+        txtMensagemAssinatura1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtMensagemAssinatura1.setText("Mensagem de Assinatura 1");
+        jPanel1.add(txtMensagemAssinatura1);
+        txtMensagemAssinatura1.setBounds(50, 440, 380, 33);
 
-        jLabel7.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel7.setText("Mensagem de Assinatura 2");
-        jPanel1.add(jLabel7);
-        jLabel7.setBounds(500, 453, 340, 30);
+        txtMensagemAssinatura2.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtMensagemAssinatura2.setText("Mensagem de Assinatura 2");
+        jPanel1.add(txtMensagemAssinatura2);
+        txtMensagemAssinatura2.setBounds(500, 453, 340, 30);
 
-        jLabel8.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel8.setText("Carga Horária");
-        jPanel1.add(jLabel8);
-        jLabel8.setBounds(70, 160, 190, 33);
+        txtCargaHoraria.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtCargaHoraria.setText("Carga Horária");
+        jPanel1.add(txtCargaHoraria);
+        txtCargaHoraria.setBounds(70, 160, 190, 33);
 
-        jLabel9.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel9.setText("Data de Início");
-        jPanel1.add(jLabel9);
-        jLabel9.setBounds(470, 120, 200, 33);
+        txtDataInicio.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtDataInicio.setText("Data de Início");
+        jPanel1.add(txtDataInicio);
+        txtDataInicio.setBounds(470, 120, 200, 33);
 
         etDescricao.setBackground(new java.awt.Color(255, 153, 153));
         etDescricao.setColumns(20);
@@ -232,9 +232,9 @@ public class PanelAdicionarOficina extends javax.swing.JPanel {
         jPanel1.add(jScrollPane5);
         jScrollPane5.setBounds(40, 480, 310, 90);
 
-        kLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/listasRedimensionado.jpg"))); // NOI18N
-        jPanel1.add(kLabel1);
-        kLabel1.setBounds(-4, -6, 860, 690);
+        Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/bg_870x690.jpg"))); // NOI18N
+        jPanel1.add(Fundo);
+        Fundo.setBounds(-4, -6, 860, 690);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -254,6 +254,7 @@ public class PanelAdicionarOficina extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private br.com.cyber.componente.KLabel Fundo;
     public static br.com.cyber.componente.KButton btAdicionar;
     public static br.com.cyber.componente.KButton btCSV;
     public static br.com.cyber.componente.KButton btCancelar;
@@ -265,23 +266,22 @@ public class PanelAdicionarOficina extends javax.swing.JPanel {
     public static br.com.cyber.componente.KTextArea etProgramacao;
     public static br.com.cyber.componente.KTextArea etTextoAssinatura1;
     public static br.com.cyber.componente.KTextArea etTextoAssinatura2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private br.com.cyber.componente.KLabel kLabel1;
     public static javax.swing.JLabel lbAlert;
     public static javax.swing.JLabel lbIconAlert;
     public static javax.swing.JPanel pnAlert;
+    private javax.swing.JLabel txtCargaHoraria;
+    private javax.swing.JLabel txtDataInicio;
+    private javax.swing.JLabel txtDataTermino;
+    private javax.swing.JLabel txtDescricao;
+    private javax.swing.JLabel txtLocal;
+    private javax.swing.JLabel txtMensagemAssinatura1;
+    private javax.swing.JLabel txtMensagemAssinatura2;
+    private javax.swing.JLabel txtProgramacao;
+    private javax.swing.JLabel txtTitulo;
     // End of variables declaration//GEN-END:variables
 }

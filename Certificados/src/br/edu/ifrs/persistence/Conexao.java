@@ -19,7 +19,7 @@ public class Conexao {
     private static final Logger LOG = Logger.getLogger(Conexao.class.getName());
    
     private static String HOST     = "localhost";
-    private static String BASE     = "Pessoas";
+    private static String BASE     = "Certificados";
     private static String USER     = "postgres";
     private static String PASSWORD = "postgres";
     

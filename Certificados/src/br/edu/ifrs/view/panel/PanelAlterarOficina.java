@@ -33,23 +33,23 @@ public class PanelAlterarOficina extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        txtTitulo = new javax.swing.JLabel();
+        txtDescricao = new javax.swing.JLabel();
+        txtDataInicio = new javax.swing.JLabel();
         pnAlert = new javax.swing.JPanel();
         lbAlert = new javax.swing.JLabel();
         lbIconAlert = new javax.swing.JLabel();
         etLocal = new br.com.cyber.componente.KTextField();
         btCancelar = new br.com.cyber.componente.KButton();
-        jLabel5 = new javax.swing.JLabel();
+        txtLocal = new javax.swing.JLabel();
         etID = new br.com.cyber.componente.KTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        txtProgramacao = new javax.swing.JLabel();
+        txtMensagemAssinatura1 = new javax.swing.JLabel();
         etDataFim = new br.com.cyber.componente.KTextField();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        txtID = new javax.swing.JLabel();
+        txtMensagemAssinatura2 = new javax.swing.JLabel();
+        txtDataTermino = new javax.swing.JLabel();
+        txtCargaHoraria = new javax.swing.JLabel();
         etDataInicio = new br.com.cyber.componente.KTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         etDescricao = new br.com.cyber.componente.KTextArea();
@@ -60,26 +60,26 @@ public class PanelAlterarOficina extends javax.swing.JPanel {
         etTextoAssinatura1 = new br.com.cyber.componente.KTextArea();
         jScrollPane4 = new javax.swing.JScrollPane();
         etTextoAssinatura2 = new br.com.cyber.componente.KTextArea();
-        btAlterar1 = new br.com.cyber.componente.KButton();
-        jLabel11 = new javax.swing.JLabel();
+        btAlterar = new br.com.cyber.componente.KButton();
+        Fundo = new javax.swing.JLabel();
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
-        jLabel1.setText("Alterar Oficina");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(60, 40, 380, 48);
+        txtTitulo.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
+        txtTitulo.setText("Alterar Oficina");
+        jPanel1.add(txtTitulo);
+        txtTitulo.setBounds(60, 40, 380, 48);
 
-        jLabel2.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel2.setText("Descrição");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(30, 320, 140, 30);
+        txtDescricao.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtDescricao.setText("Descrição");
+        jPanel1.add(txtDescricao);
+        txtDescricao.setBounds(30, 320, 140, 30);
 
-        jLabel3.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel3.setText("Data de Início");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(450, 140, 210, 30);
+        txtDataInicio.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtDataInicio.setText("Data de Início");
+        jPanel1.add(txtDataInicio);
+        txtDataInicio.setBounds(450, 140, 210, 30);
 
         lbAlert.setFont(new java.awt.Font("Monospaced", 2, 18)); // NOI18N
         lbAlert.setForeground(new java.awt.Color(254, 91, 91));
@@ -130,10 +130,10 @@ public class PanelAlterarOficina extends javax.swing.JPanel {
         jPanel1.add(btCancelar);
         btCancelar.setBounds(700, 610, 130, 42);
 
-        jLabel5.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel5.setText("Local");
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(40, 270, 80, 30);
+        txtLocal.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtLocal.setText("Local");
+        jPanel1.add(txtLocal);
+        txtLocal.setBounds(40, 260, 80, 30);
 
         etID.setBackground(new java.awt.Color(204, 204, 204));
         etID.setEnabled(false);
@@ -144,15 +144,15 @@ public class PanelAlterarOficina extends javax.swing.JPanel {
         jPanel1.add(etID);
         etID.setBounds(230, 150, 70, 30);
 
-        jLabel4.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel4.setText("Programação");
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(490, 320, 160, 30);
+        txtProgramacao.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtProgramacao.setText("Programação");
+        jPanel1.add(txtProgramacao);
+        txtProgramacao.setBounds(490, 320, 160, 30);
 
-        jLabel6.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel6.setText("Mensagem de Assinatura 1");
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(30, 470, 340, 30);
+        txtMensagemAssinatura1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtMensagemAssinatura1.setText("Mensagem de Assinatura 1");
+        jPanel1.add(txtMensagemAssinatura1);
+        txtMensagemAssinatura1.setBounds(30, 470, 340, 30);
 
         etDataFim.setBackground(new java.awt.Color(255, 153, 153));
         etDataFim.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
@@ -162,25 +162,25 @@ public class PanelAlterarOficina extends javax.swing.JPanel {
         jPanel1.add(etDataFim);
         etDataFim.setBounds(660, 190, 170, 35);
 
-        jLabel7.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel7.setText("ID");
-        jPanel1.add(jLabel7);
-        jLabel7.setBounds(180, 150, 30, 30);
+        txtID.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtID.setText("ID");
+        jPanel1.add(txtID);
+        txtID.setBounds(180, 150, 30, 30);
 
-        jLabel8.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel8.setText("Mensagem de Assinatura 2");
-        jPanel1.add(jLabel8);
-        jLabel8.setBounds(490, 470, 360, 30);
+        txtMensagemAssinatura2.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtMensagemAssinatura2.setText("Mensagem de Assinatura 2");
+        jPanel1.add(txtMensagemAssinatura2);
+        txtMensagemAssinatura2.setBounds(490, 470, 360, 30);
 
-        jLabel9.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel9.setText("Data Final");
-        jPanel1.add(jLabel9);
-        jLabel9.setBounds(510, 190, 150, 30);
+        txtDataTermino.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtDataTermino.setText("Data de Término");
+        jPanel1.add(txtDataTermino);
+        txtDataTermino.setBounds(440, 190, 220, 33);
 
-        jLabel10.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel10.setText("Carga Horária");
-        jPanel1.add(jLabel10);
-        jLabel10.setBounds(30, 190, 190, 30);
+        txtCargaHoraria.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        txtCargaHoraria.setText("Carga Horária");
+        jPanel1.add(txtCargaHoraria);
+        txtCargaHoraria.setBounds(30, 190, 190, 30);
 
         etDataInicio.setBackground(new java.awt.Color(255, 153, 153));
         etDataInicio.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
@@ -242,21 +242,21 @@ public class PanelAlterarOficina extends javax.swing.JPanel {
         jPanel1.add(jScrollPane4);
         jScrollPane4.setBounds(490, 510, 340, 90);
 
-        btAlterar1.setBackground(new java.awt.Color(38, 193, 93));
-        btAlterar1.setForeground(new java.awt.Color(255, 255, 255));
-        btAlterar1.setText("Alterar");
-        btAlterar1.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        btAlterar1.addActionListener(new java.awt.event.ActionListener() {
+        btAlterar.setBackground(new java.awt.Color(38, 193, 93));
+        btAlterar.setForeground(new java.awt.Color(255, 255, 255));
+        btAlterar.setText("Alterar");
+        btAlterar.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        btAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btAlterar1ActionPerformed(evt);
+                btAlterarActionPerformed(evt);
             }
         });
-        jPanel1.add(btAlterar1);
-        btAlterar1.setBounds(30, 610, 103, 42);
+        jPanel1.add(btAlterar);
+        btAlterar.setBounds(30, 610, 103, 42);
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/listasRedimensionado.jpg"))); // NOI18N
-        jPanel1.add(jLabel11);
-        jLabel11.setBounds(0, 0, 860, 680);
+        Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifrs/imagens/bg_870x690.jpg"))); // NOI18N
+        jPanel1.add(Fundo);
+        Fundo.setBounds(0, 0, 860, 680);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -278,12 +278,13 @@ public class PanelAlterarOficina extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_etDataInicioActionPerformed
 
-    private void btAlterar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAlterar1ActionPerformed
+    private void btAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAlterarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btAlterar1ActionPerformed
+    }//GEN-LAST:event_btAlterarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public static br.com.cyber.componente.KButton btAlterar1;
+    private javax.swing.JLabel Fundo;
+    public static br.com.cyber.componente.KButton btAlterar;
     public static br.com.cyber.componente.KButton btCancelar;
     public static br.com.cyber.componente.KTextField etCargaHoraria;
     public static br.com.cyber.componente.KTextField etDataFim;
@@ -294,17 +295,6 @@ public class PanelAlterarOficina extends javax.swing.JPanel {
     public static br.com.cyber.componente.KTextArea etProgramacao;
     public static br.com.cyber.componente.KTextArea etTextoAssinatura1;
     public static br.com.cyber.componente.KTextArea etTextoAssinatura2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
@@ -313,5 +303,15 @@ public class PanelAlterarOficina extends javax.swing.JPanel {
     public static javax.swing.JLabel lbAlert;
     public static javax.swing.JLabel lbIconAlert;
     public static javax.swing.JPanel pnAlert;
+    private javax.swing.JLabel txtCargaHoraria;
+    private javax.swing.JLabel txtDataInicio;
+    private javax.swing.JLabel txtDataTermino;
+    private javax.swing.JLabel txtDescricao;
+    private javax.swing.JLabel txtID;
+    private javax.swing.JLabel txtLocal;
+    private javax.swing.JLabel txtMensagemAssinatura1;
+    private javax.swing.JLabel txtMensagemAssinatura2;
+    private javax.swing.JLabel txtProgramacao;
+    private javax.swing.JLabel txtTitulo;
     // End of variables declaration//GEN-END:variables
 }
